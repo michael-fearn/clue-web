@@ -10,12 +10,18 @@ importers:
 
   apps/backend:
     dependencies:
+      '@colyseus/core':
+        specifier: ^0.16.18
+        version: 0.16.18(@colyseus/schema@3.0.37)
       '@colyseus/monitor':
         specifier: ^0.16.7
         version: 0.16.7
       '@colyseus/playground':
         specifier: ^0.16.4
         version: 0.16.4(@colyseus/auth@0.16.6(@colyseus/core@0.16.18(@colyseus/schema@3.0.37))(express@4.21.2))(@colyseus/core@0.16.18(@colyseus/schema@3.0.37))(express@4.21.2)
+      '@colyseus/schema':
+        specifier: ^3.0.37
+        version: 3.0.37
       '@colyseus/tools':
         specifier: ^0.16.8
         version: 0.16.8(@colyseus/core@0.16.18(@colyseus/schema@3.0.37))(@colyseus/ws-transport@0.16.5(@colyseus/core@0.16.18(@colyseus/schema@3.0.37)))
@@ -74,6 +80,9 @@ importers:
       '@angular/router':
         specifier: ^19.2.0
         version: 19.2.13(@angular/common@19.2.13(@angular/core@19.2.13(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.13(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@19.2.13(@angular/common@19.2.13(@angular/core@19.2.13(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.13(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
+      colyseus.js:
+        specifier: ^0.16.17
+        version: 0.16.17
       rxjs:
         specifier: ~7.8.0
         version: 7.8.2
