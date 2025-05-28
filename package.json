@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:libs":"pnpm run --filter \"{libs/**}\" --parallel watch",
+    "format": "pnpm exec prettier --write \"apps/**\" \"libs/**\" ",
+    "watch:libs": "pnpm run --filter \"{libs/**}\" --parallel watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +15,8 @@
   "workspaces": [
     "apps/*",
     "libs/*"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
 }
