@@ -6,5 +6,6 @@ catalog:
   colyseus.js: ^0.16.17
   "@colyseus/schema": ^3.0.37
   typescript: ~5.7.2
+  tsx: ^4.19.4
 
 linkWorkspacePackages: true
