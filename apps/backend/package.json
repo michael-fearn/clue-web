@@ -34,8 +34,9 @@
     "@colyseus/core": "^0.16.18",
     "@colyseus/monitor": "^0.16.7",
     "@colyseus/playground": "^0.16.4",
-    "@colyseus/schema": "^3.0.37",
+    "@colyseus/schema": "catalog:",
     "@colyseus/tools": "^0.16.8",
+    "@lib/schemas": "workspace:^",
     "colyseus": "^0.16.4",
     "express": "^4.21.2"
   }

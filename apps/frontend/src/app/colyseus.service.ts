@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { MyRoomState } from '@lib/schemas';
 import { Client } from 'colyseus.js';
 
 
@@ -11,7 +12,7 @@ export class ColyseusService {
 
   async joinRoom() {
     console.log('joining room')
-    const room = await this.client.joinOrCreate('my_room')
+    const room = await this.client.joinOrCreate<MyRoomState>('my_room')
     console.log('room is open', room.connection.isOpen)
   }
 }
