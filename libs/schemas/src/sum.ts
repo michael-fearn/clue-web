@@ -8,18 +8,19 @@ export enum Suit {
 }
 
 export class Card extends Schema {
-  @type(Suit) suit: Suit;
+  @type('string') suit: Suit;
   @type("string") face: string;
 }
 
 export class Player extends Schema {
-  @type({ map: Player }) cards = new MapSchema<Card>();
+  @type({ map: Card }) cards = new MapSchema<Card>();
 }
 
 export class SumRoomState extends Schema {
   @type({ map: Player }) players = new MapSchema<Player>();
   @type([Card]) deck = new ArraySchema<Card>();
   @type([Card]) playedCards = new ArraySchema<Card>();
+  @type("number") round: number = 0;
   @type("number") playTo: number = 21;
   @type("number") sum: number = 0;
   @type("string") winningPlayerSessionId: string = "";

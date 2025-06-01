@@ -11,9 +11,9 @@ export class SumRoom extends Room<SumRoomState, Player> {
 
     this.onMessage("play-card", (client, cardKey: string) => {
       const player = this.state.players.get(client.sessionId);
-      
+
       if (!player.cards.has(cardKey)) throw new Error("Bad cardIndex");
-      
+
       const card = player.cards.get(cardKey);
       player.cards.delete(cardKey);
 
@@ -32,6 +32,7 @@ export class SumRoom extends Room<SumRoomState, Player> {
     this.state.players.forEach((player) => player.cards.clear());
     this.state.deck.clear();
     this.state.deck.push(...this.generateDeck());
+    this.state.round = 0;
     this.state.sum = 0;
     this.state.winningPlayerSessionId = "";
   }

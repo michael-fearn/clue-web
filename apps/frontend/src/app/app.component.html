@@ -1,5 +1,17 @@
 <main class="main">
-  <div><button (click)="test()"></button></div>
+  @if (inRoom) {
+    Joining room...
+  } @else {
+    <div>Round #: {{ inRoom }}</div>
+    <div>Cards Played: {{ inRoom }}</div>
+    <div>Round: {{ inRoom }}</div>
+    <div>Is Player Turn: {{ inRoom }}</div>
+    
+    <div>Current Sum: {{ inRoom }}</div>
+    
+  }
+  <div></div>
+  <div><button>asdf</button></div>
 </main>
 
 <router-outlet />

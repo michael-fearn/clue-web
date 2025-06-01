@@ -504,7 +504,7 @@ import {
   ɵɵtwoWayProperty,
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
-  ɵɵviewQuerySignal,
+  ɵɵviewQuerySignal
 } from "./chunk-IHF6AFIX.js";
 import "./chunk-V7C3Y6KQ.js";
 export {
@@ -1015,5 +1015,5 @@ export {
   ɵɵtwoWayProperty,
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery,
-  ɵɵviewQuerySignal,
+  ɵɵviewQuerySignal
 };
